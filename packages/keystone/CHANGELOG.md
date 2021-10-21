@@ -1,5 +1,23 @@
 # @keystone-next/keystone
 
+## 27.0.0
+
+### Major Changes
+
+- [#6789](https://github.com/keystonejs/keystone/pull/6789) [`d9e1ba8fa`](https://github.com/keystonejs/keystone/commit/d9e1ba8fa23c0d9e902ef61167913ee92f5657cb) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Removed the deprecated `resolveFields` from `context.query`, if you were still using it, you should switch to providing `the query option` to `context.query` or use `context.db` if you were providing `false`. The `context.query` functions will now also throw an error if an empty string is passed to `query` rather than silently returning what the `context.db` functions return, you must select at least one field or omit the `query` option to default to selecting the `id`.
+
+* [#6755](https://github.com/keystonejs/keystone/pull/6755) [`dcf5241d8`](https://github.com/keystonejs/keystone/commit/dcf5241d8e3e62b080842a5d4bfd47a7f2cce5ca) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Updated the way the `endSession` field on the `Mutation` type and the `keystone` field on the `Query` type are added to the GraphQL schema. This may result in re-ordering in your generated `schema.graphql` file. The `sessionSchema` export of `@keystone-next/keystone/session` has also been removed.
+
+### Patch Changes
+
+- [#6758](https://github.com/keystonejs/keystone/pull/6758) [`f38772b27`](https://github.com/keystonejs/keystone/commit/f38772b27d3e9d157127dabfa40036462c235a9f) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Fixed `text`, `integer`, `float` and `decimal` on the item view when using `ui.itemView.fieldMode: 'read'`.
+
+* [#6777](https://github.com/keystonejs/keystone/pull/6777) [`30fc08b51`](https://github.com/keystonejs/keystone/commit/30fc08b515e4f8851fd2583a265a813c683bf604) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Fixed the home page of the Admin UI not respecting `ui.hideCreate`
+
+- [#6790](https://github.com/keystonejs/keystone/pull/6790) [`f683dcfe3`](https://github.com/keystonejs/keystone/commit/f683dcfe37d013b3d17f1fbad3df335b2f2ee51c) Thanks [@mitchellhamilton](https://github.com/mitchellhamilton)! - Readonly arrays are now accepted where previously mutable arrays were required. This means that if you use `as const` when writing an array and then pass it to various APIs in keystone, that will now work.
+
+* [#6804](https://github.com/keystonejs/keystone/pull/6804) [`023bc7a0b`](https://github.com/keystonejs/keystone/commit/023bc7a0b1e6fb0ebdc5055f0243d9dad255a667) Thanks [@renovate](https://github.com/apps/renovate)! - Update prisma monorepo to [v3.3.0 (minor)](https://github.com/prisma/prisma/releases/tag/3.3.0)
+
 ## 26.1.1
 
 ### Patch Changes

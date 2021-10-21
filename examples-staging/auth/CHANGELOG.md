@@ -1,5 +1,13 @@
 # @keystone-next/example-auth
 
+## 4.0.10
+
+### Patch Changes
+
+- Updated dependencies [[`d9e1ba8fa`](https://github.com/keystonejs/keystone/commit/d9e1ba8fa23c0d9e902ef61167913ee92f5657cb), [`f38772b27`](https://github.com/keystonejs/keystone/commit/f38772b27d3e9d157127dabfa40036462c235a9f), [`30fc08b51`](https://github.com/keystonejs/keystone/commit/30fc08b515e4f8851fd2583a265a813c683bf604), [`f683dcfe3`](https://github.com/keystonejs/keystone/commit/f683dcfe37d013b3d17f1fbad3df335b2f2ee51c), [`023bc7a0b`](https://github.com/keystonejs/keystone/commit/023bc7a0b1e6fb0ebdc5055f0243d9dad255a667), [`dcf5241d8`](https://github.com/keystonejs/keystone/commit/dcf5241d8e3e62b080842a5d4bfd47a7f2cce5ca)]:
+  - @keystone-next/keystone@27.0.0
+  - @keystone-next/auth@35.0.0
+
 ## 4.0.9
 
 ### Patch Changes
